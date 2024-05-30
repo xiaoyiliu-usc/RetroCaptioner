@@ -25,7 +25,7 @@ CUDA-enabled device for GPU training (optional)
 To train the model, you will use the `train.py` script. This script accepts several command-line arguments to customize the training process.
 
 ## Command-Line Arguments:
-* `--known_class`: Indicates whether the class is known (True) or unknown (False).
+* `--known_class`: Indicates whether the reaction class is known (True) or unknown (False).
 * `--checkpoint_dir`: Specifies the directory where the model checkpoints will be saved.
 * `--device`: Designates the training device, either cuda:0 for GPU or cpu for CPU.
 
