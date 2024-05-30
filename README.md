@@ -38,6 +38,19 @@ $ python train_singleGPU.py --known_class 'True' --checkpoint_dir 'checkpoint' -
 ```
 Replace the argument values as per your requirements. For instance, use `--device`  cpu if you're training on a CPU.
 
+## Multi-GPU Training command：
+
+To run the training on multiple GPUs, use the following command:
+
+``` bash
+$ CUDA_VISIBLE_DEVICES=0,2 python -m torch.distributed.launch --nproc_per_node=2 train_multiGPU.py
+```
+
+* `CUDA_VISIBLE_DEVICES=0,2`: This specifies the GPU devices (in this case, GPUs 0 and 2) on which the training will be run.
+* `--nproc_per_node=2`: This indicates the total number of GPUs to be used (2 GPUs in this example).
+* `train_multiGPU.py`: This is the training script.
+
+You can also add additional parameters to train_multiGPU.py to adjust whether you are running known reaction types or unknown reaction types. The parameters are the same as those used in the single GPU setup.
 
 ## Validating the model
 
