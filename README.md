@@ -34,7 +34,7 @@ To train the model, you will use the `train.py` script. This script accepts seve
 Run the following command to start the training process:
 
 ``` bash
-$ python train.py --known_class 'True' --checkpoint_dir 'checkpoint' --device 'cuda:0'
+$ python train_singleGPU.py --known_class 'True' --checkpoint_dir 'checkpoint' --device 'cuda:0'
 ```
 Replace the argument values as per your requirements. For instance, use `--device`  cpu if you're training on a CPU.
 
