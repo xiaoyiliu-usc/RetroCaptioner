@@ -12,7 +12,7 @@ In the application of drug synthesis route planning, RetroCaptioner identifies s
 ## Setup
 RetroCaptioner requires anaconda with Python 3.7 or later, cudatoolkit=10.2.
 
-Sugguest to install RetroCaptioner in a virtual environment to prevent conflicting dependencies.
+Suggest to install RetroCaptioner in a virtual environment to prevent conflicting dependencies.
 ```
 conda create -n RetroCaptioner python==3.7
 conda activate RetroCaptioner
