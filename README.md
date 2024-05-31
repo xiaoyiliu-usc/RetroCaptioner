@@ -45,7 +45,7 @@ Replace the argument values as per your requirements. For instance, use `--devic
 To run the training on multiple GPUs, use the following command:
 
 ``` bash
-$ CUDA_VISIBLE_DEVICES=0,2 python -m torch.distributed.launch --nproc_per_node=2 train_multiGPU.py
+$ CUDA_VISIBLE_DEVICES=0,2 python -m torch.distributed.launch --nproc_per_node=2 train_multiGPU.py --known_class 'True' --checkpoint_dir 'checkpoint'
 ```
 
 * `CUDA_VISIBLE_DEVICES=0,2`: This specifies the GPU devices (in this case, GPUs 0 and 2) on which the training will be run.
