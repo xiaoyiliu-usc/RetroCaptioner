@@ -19,6 +19,8 @@ conda activate RetroCaptioner
 conda install --yes --file requirements.txt
 CUDA-enabled device for GPU training (optional)
 ```
+## Setup
+You can download the data from [here](https://drive.google.com/drive/folders/1bJcQnyN0fEYFhxSkN2hqJPwwOh6TayHB?usp=sharing)
 
 ## Training the model
 
